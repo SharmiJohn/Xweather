@@ -12,7 +12,7 @@ function App() {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);cd
+    setLoading(true);
     try {
       const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${weather}`);
       setweatherdata(response.data);
