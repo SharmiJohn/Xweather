@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <form onSubmit={(e)=>handleSubmit(e)}>
-        <input style={{width:"300px",height:"40px",borderRadius:"10px",border:"1px solid rgb(250, 250, 250)",margin:"10px",paddingLeft:"5px"}} placeholder="Enter city name" value={weather} onChange={(e)=>setweather(e.target.value)}/>
+        <input type="text" style={{width:"300px",height:"40px",borderRadius:"10px",border:"1px solid rgb(250, 250, 250)",margin:"10px",paddingLeft:"5px"}} placeholder="Enter city name" value={weather} onChange={(e)=>setweather(e.target.value)}/>
         <button type="submit"  style={{width:"100px",height:"40px",borderRadius:"10px",border:"1px solid rgb(250, 250, 250)",margin:"10px",background:"rgb(0, 153, 0)",color:"white"}}>Search</button>
       </form>
      {loading&& <p>Loading data...</p>}
